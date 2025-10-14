@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { LineChart, BarChart, TrendingUp, Users, Video } from "lucide-react";
+import CountUp from "@/components/CountUp";
 
 const ImpactMetrics = () => {
   const metrics = [
@@ -40,7 +41,16 @@ const ImpactMetrics = () => {
                   <metric.icon className={`w-8 h-8 ${metric.color}`} />
                 </div>
                 <CardTitle className="text-5xl font-bold text-foreground mb-2">
-                  {metric.value}
+                  <CountUp
+                    from={0}
+                    to={parseInt(metric.value.replace('%', ''))}
+                    duration={2}
+                    delay={0.5}
+                    className="count-up-text"
+                    onStart={() => {}}
+                    onEnd={() => {}}
+                  />
+                  {metric.value.includes('%') && '%'}
                 </CardTitle>
               </CardHeader>
               <CardContent className="pt-0">

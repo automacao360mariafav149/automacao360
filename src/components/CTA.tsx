@@ -1,3 +1,5 @@
+import CountUp from "@/components/CountUp";
+
 const CTA = () => {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-primary">
@@ -6,7 +8,7 @@ const CTA = () => {
           Pronto para revolucionar suas vendas?
         </h2>
         <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-          Comece hoje mesmo e veja os resultados em poucos dias. Nossa equipe está pronta para ajudar você.
+          Comece hoje mesmo e veja os resultados em <CountUp from={0} to={7} duration={1.5} className="font-bold" /> dias. Nossa equipe está pronta para ajudar você.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button className="bg-background text-foreground px-8 py-3 rounded-lg hover:bg-background/90 transition-colors">

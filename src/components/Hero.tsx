@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import CountUp from "@/components/CountUp";
 
 const Hero = () => {
   return (
@@ -10,6 +11,10 @@ const Hero = () => {
               Como estão suas{" "}
               <span className="text-primary">Vendas</span> hoje?
             </h1>
+            
+            <div className="text-2xl text-muted-foreground mb-4">
+              <CountUp from={0} to={90} duration={2} delay={1} className="text-primary font-bold" onStart={() => {}} onEnd={() => {}} /> dias para dobrar suas vendas
+            </div>
             
             <p className="text-xl text-muted-foreground leading-relaxed">
             Com a Automação360, sua empresa transforma a forma de prospectar: ligações inteligentes com IA de voz que conversam como humanos, geram leads qualificados em escala e elevam a produtividade da sua operação comercial.
