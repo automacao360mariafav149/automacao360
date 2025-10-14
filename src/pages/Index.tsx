@@ -1,5 +1,9 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import ImpactMetrics from "@/components/ImpactMetrics";
+import WhatsAppCallSection from "@/components/WhatsAppCallSection";
+import QualificationSchedulingSection from "@/components/QualificationSchedulingSection";
+import RemindersSection from "@/components/RemindersSection";
 import CallForm from "@/components/CallForm";
 import HowItWorks from "@/components/HowItWorks";
 import Features from "@/components/Features";
@@ -15,6 +19,10 @@ const Index = () => {
     <div className="min-h-screen">
       <Navbar />
       <Hero />
+      <ImpactMetrics />
+      <WhatsAppCallSection />
+      <QualificationSchedulingSection />
+      <RemindersSection />
       <CallForm />
       <HowItWorks />
       <Features />
