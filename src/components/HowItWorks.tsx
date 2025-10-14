@@ -38,20 +38,21 @@ const HowItWorks = () => {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
       <div className="container mx-auto">
-        {/* Título e Subtítulo */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">
-            Como Começar em 4 Passos
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Configure sua campanha rapidamente e comece a ver resultados
-          </p>
-        </div>
-
-        {/* Quadro com os 4 passos em cards */}
-        <Card className="p-8 mb-12 border-2 border-primary/20">
+        {/* Quadro principal com todo o conteúdo */}
+        <Card className="p-8 border-2 border-primary/20">
           <CardContent className="p-0">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Título e Subtítulo */}
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold mb-4">
+                Como Começar em 4 Passos
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+                Configure sua campanha rapidamente e comece a ver resultados
+              </p>
+            </div>
+
+            {/* 4 passos em cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
               {steps.map((step, index) => (
                 <Card key={step.number} className="relative border-2 border-primary/10 hover:border-primary/30 transition-all duration-300">
                   <CardContent className="p-6 text-center">
@@ -84,32 +85,32 @@ const HowItWorks = () => {
                 </Card>
               ))}
             </div>
+
+            {/* Tag Flexibilidade Total */}
+            <div className="text-center mb-8">
+              <div className="inline-block bg-primary/10 text-primary px-6 py-2 rounded-full text-sm font-semibold">
+                Flexibilidade Total
+              </div>
+            </div>
+
+            {/* Parágrafo explicativo */}
+            <div className="text-center mb-12">
+              <p className="text-muted-foreground max-w-3xl mx-auto">
+                Use sua lista de contatos existente ou solicite que nossa equipe configure a integração com seu CRM para máxima eficiência.
+              </p>
+            </div>
+
+            {/* Recursos de Segurança */}
+            <div className="flex flex-wrap justify-center gap-8">
+              {securityFeatures.map((feature, index) => (
+                <div key={index} className="flex items-center space-x-2">
+                  <Check className="w-5 h-5 text-green-500" />
+                  <span className="text-muted-foreground font-medium">{feature}</span>
+                </div>
+              ))}
+            </div>
           </CardContent>
         </Card>
-
-        {/* Tag Flexibilidade Total */}
-        <div className="text-center mb-8">
-          <div className="inline-block bg-primary/10 text-primary px-6 py-2 rounded-full text-sm font-semibold">
-            Flexibilidade Total
-          </div>
-        </div>
-
-        {/* Parágrafo explicativo */}
-        <div className="text-center mb-12">
-          <p className="text-muted-foreground max-w-3xl mx-auto">
-            Use sua lista de contatos existente ou solicite que nossa equipe configure a integração com seu CRM para máxima eficiência.
-          </p>
-        </div>
-
-        {/* Recursos de Segurança */}
-        <div className="flex flex-wrap justify-center gap-8">
-          {securityFeatures.map((feature, index) => (
-            <div key={index} className="flex items-center space-x-2">
-              <Check className="w-5 h-5 text-green-500" />
-              <span className="text-muted-foreground font-medium">{feature}</span>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );
