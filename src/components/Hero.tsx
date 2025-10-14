@@ -12,12 +12,12 @@ const Hero = () => {
             </h1>
             
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Com a Automação360, sua empresa transforma a forma de prospectar: ligações inteligentes com IA de voz que conversam como humanos, geram leads qualificados em escala e elevam a produtividade da sua operação comercial.
+            Com a Automação360, sua empresa transforma a forma de prospectar: ligações inteligentes com IA de voz que conversam como humanos, geram leads qualificados em escala e elevam a produtividade da sua operação comercial.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8">
-                Falar com a IA agora
+                Quero Automatizar Minhas Vendas Agora →
               </Button>
               <Button size="lg" variant="outline" className="text-lg px-8 border-2">
                 Ver Preços e Planos

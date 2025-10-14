@@ -10,7 +10,7 @@ const CTA = () => {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button className="bg-background text-foreground px-8 py-3 rounded-lg hover:bg-background/90 transition-colors">
-            Falar com Especialista
+            Quero Automatizar Minhas Vendas Agora →
           </button>
           <button className="border-2 border-primary-foreground text-primary-foreground px-8 py-3 rounded-lg hover:bg-primary-foreground hover:text-primary transition-colors">
             Teste Grátis
