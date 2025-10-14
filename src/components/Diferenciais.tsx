@@ -16,7 +16,7 @@ const Diferenciais = () => {
     {
       icon: Target,
       title: "Abordagens sob medida para cada lead",
-      description: "A Prospct.AI transforma suas conversas de vendas usando inteligência artificial treinada nos frameworks SPIN Selling, GPCT e RDO adaptando a conversa em tempo real quebrando objeções estrategicamente."
+      description: "A Automação360 transforma suas conversas de vendas usando inteligência artificial treinada nos frameworks SPIN Selling, GPCT e RDO adaptando a conversa em tempo real quebrando objeções estrategicamente."
     },
     {
       icon: MessageCircle,
@@ -26,7 +26,7 @@ const Diferenciais = () => {
     {
       icon: Clock,
       title: "Cadência automatizada e inteligente",
-      description: "Ela segue uma cadência estruturada, com espaçamento estratégico entre as abordagens, garantindo que cada lead seja constatado no melhor momento."
+      description: "Ela segue uma cadência estruturada, com espaçamento estratégico entre as abordagens, garantindo que cada lead seja contatado no melhor momento."
     },
     {
       icon: Settings,
@@ -47,7 +47,7 @@ const Diferenciais = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {diferenciais.map((diferencial, index) => (
             <Card key={index} className="border-2 hover:border-primary transition-all duration-300 hover:shadow-lg">
               <CardHeader>
