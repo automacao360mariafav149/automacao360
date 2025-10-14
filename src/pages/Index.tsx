@@ -6,6 +6,7 @@ import Features from "@/components/Features";
 import Diferenciais from "@/components/Diferenciais";
 import Testimonials from "@/components/Testimonials";
 import Pricing from "@/components/Pricing";
+import DemoForm from "@/components/DemoForm";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
@@ -20,6 +21,7 @@ const Index = () => {
       <Diferenciais />
       <Testimonials />
       <Pricing />
+      <DemoForm />
       <CTA />
       <Footer />
     </div>
