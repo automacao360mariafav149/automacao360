@@ -8,7 +8,6 @@ import CallForm from "@/components/CallForm";
 import HowItWorks from "@/components/HowItWorks";
 import CrmIntegrations from "@/components/CrmIntegrations";
 import Features from "@/components/Features";
-import Diferenciais from "@/components/Diferenciais";
 import Testimonials from "@/components/Testimonials";
 import Pricing from "@/components/Pricing";
 import DemoForm from "@/components/DemoForm";
@@ -37,7 +36,6 @@ const Index = () => {
       <HowItWorks />
       <CrmIntegrations />
       <Features />
-      <Diferenciais />
       <Testimonials />
       <Pricing />
       <DemoForm />

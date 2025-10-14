@@ -2,16 +2,13 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Select } from "@/components/ui/select";
-import { Card, CardContent } from "@/components/ui/card";
-import { Check, Phone, Users, Clock } from "lucide-react";
+import { Card } from "@/components/ui/card";
+import { Check, Phone } from "lucide-react";
 
 const CallForm = () => {
   const [formData, setFormData] = useState({
     nome: "",
     telefone: "",
-    equipe: "",
-    cargo: "",
     prospeccao: ""
   });
 
@@ -21,7 +18,7 @@ const CallForm = () => {
     // Aqui você pode adicionar a lógica para enviar os dados
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({
       ...prev,
@@ -36,25 +33,28 @@ const CallForm = () => {
           {/* Coluna Esquerda - Formulário */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-4xl font-bold mb-6">
-                Receba uma Ligação da IA
+              <h2 className="text-4xl font-bold mb-4">
+                Teste agora a IA da Automação360
               </h2>
+              <p className="text-xl text-muted-foreground mb-8">
+                Em poucos segundos, você recebe uma ligação real e entende como automatizar sua prospecção com qualidade humana.
+              </p>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 text-primary" />
-                  <span className="text-muted-foreground">Ligação em até 30 segundos</span>
+                  <span className="text-2xl">📞</span>
+                  <span className="text-muted-foreground">Ligação imediata</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 text-primary" />
-                  <span className="text-muted-foreground">Demonstração real da tecnologia</span>
+                  <span className="text-2xl">🤖</span>
+                  <span className="text-muted-foreground">Conversa real com IA</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 text-primary" />
-                  <span className="text-muted-foreground">Apresentação comercial personalizada</span>
+                  <span className="text-2xl">📊</span>
+                  <span className="text-muted-foreground">Apresentação personalizada</span>
                 </div>
                 <div className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 text-primary" />
-                  <span className="text-muted-foreground">Experiência personalizada</span>
+                  <span className="text-2xl">🚀</span>
+                  <span className="text-muted-foreground">Experiência completa</span>
                 </div>
               </div>
             </div>
@@ -95,46 +95,6 @@ const CallForm = () => {
                 </p>
               </div>
 
-              <div>
-                <Label htmlFor="equipe" className="text-base font-semibold">
-                  Quantas pessoas você tem na equipe de vendas? *
-                </Label>
-                <Select
-                  id="equipe"
-                  name="equipe"
-                  value={formData.equipe}
-                  onChange={handleChange}
-                  required
-                  className="mt-2"
-                >
-                  <option value="">Selecione o tamanho da sua equipe</option>
-                  <option value="1-5">1-5 pessoas</option>
-                  <option value="6-15">6-15 pessoas</option>
-                  <option value="16-50">16-50 pessoas</option>
-                  <option value="50+">Mais de 50 pessoas</option>
-                </Select>
-              </div>
-
-              <div>
-                <Label htmlFor="cargo" className="text-base font-semibold">
-                  Qual o seu cargo? *
-                </Label>
-                <Select
-                  id="cargo"
-                  name="cargo"
-                  value={formData.cargo}
-                  onChange={handleChange}
-                  required
-                  className="mt-2"
-                >
-                  <option value="">Selecione seu cargo</option>
-                  <option value="ceo">CEO/Diretor</option>
-                  <option value="gerente">Gerente de Vendas</option>
-                  <option value="coordenador">Coordenador</option>
-                  <option value="vendedor">Vendedor</option>
-                  <option value="outro">Outro</option>
-                </Select>
-              </div>
 
               <div>
                 <Label className="text-base font-semibold">
@@ -179,30 +139,6 @@ const CallForm = () => {
 
           {/* Coluna Direita - Informações */}
           <div className="space-y-8">
-            {/* Como Funciona */}
-            <Card className="p-6">
-              <h3 className="text-xl font-bold mb-4">Como Funciona</h3>
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <div className="w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold">
-                    1
-                  </div>
-                  <p className="text-muted-foreground">Preencha seus dados acima</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold">
-                    2
-                  </div>
-                  <p className="text-muted-foreground">Nossa IA inicia a ligação em 30 segundos</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold">
-                    3
-                  </div>
-                  <p className="text-muted-foreground">Converse naturalmente e veja a tecnologia</p>
-                </div>
-              </div>
-            </Card>
 
             {/* Resultados Comprovados */}
             <Card className="p-6 bg-primary text-primary-foreground">
