@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card } from "@/components/ui/card";
-import { Check, Phone } from "lucide-react";
+import { Phone } from "lucide-react";
 
 const CallForm = () => {
   const [formData, setFormData] = useState({
@@ -56,8 +56,8 @@ const CallForm = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
-          {/* Coluna Esquerda - Card com Formulário */}
+        <div className="max-w-2xl mx-auto">
+          {/* Card com Formulário */}
           <Card className="p-8">
             <div className="mb-8">
               <h3 className="text-2xl font-bold mb-6">
@@ -165,37 +165,6 @@ const CallForm = () => {
             </form>
           </Card>
 
-          {/* Coluna Direita - Informações */}
-          <div className="space-y-8">
-
-            {/* Resultados Comprovados */}
-            <Card className="p-6 bg-primary text-primary-foreground">
-              <div className="flex items-start space-x-3">
-                <Check className="w-6 h-6 mt-1" />
-                <div>
-                  <h3 className="text-xl font-bold mb-4">Resultados Comprovados</h3>
-                  <div className="grid grid-cols-2 gap-6">
-                    <div>
-                      <div className="text-3xl font-bold">98%</div>
-                      <div className="text-sm opacity-90">Ficam Impressionados</div>
-                    </div>
-                    <div>
-                      <div className="text-3xl font-bold">5 min</div>
-                      <div className="text-sm opacity-90">Duração Média</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Card>
-
-            {/* Depoimento */}
-            <Card className="p-6">
-              <blockquote className="text-muted-foreground italic mb-4">
-                "Ontem fiquei 10 minutos no telefone conversando com a IA e já não sei se realmente é IA, foi muito longe a conversa"
-              </blockquote>
-              <cite className="text-sm font-semibold">- Guilherme, CEO Alves Pacheco</cite>
-            </Card>
-          </div>
         </div>
       </div>
     </section>
