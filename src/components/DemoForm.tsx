@@ -5,7 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Select } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
-import { Check, Phone, Mail, MapPin, Clock, Send, Users, TrendingUp } from "lucide-react";
+import { Check, Send } from "lucide-react";
 
 const DemoForm = () => {
   const [formData, setFormData] = useState({
@@ -48,8 +48,8 @@ const DemoForm = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Coluna Esquerda - Formulário */}
+        <div className="max-w-4xl mx-auto">
+          {/* Formulário */}
           <Card className="p-8">
             <CardContent className="p-0">
               <h3 className="text-2xl font-bold mb-6">
@@ -260,75 +260,6 @@ const DemoForm = () => {
               </form>
             </CardContent>
           </Card>
-
-          {/* Coluna Direita - Informações de Contato e Métricas */}
-          <div className="space-y-8">
-            {/* Informações de Contato */}
-            <Card className="p-8">
-              <CardContent className="p-0">
-                <h3 className="text-2xl font-bold mb-6">Entre em Contato</h3>
-                
-                <div className="space-y-6">
-                  <div className="flex items-start space-x-4">
-                    <Phone className="w-6 h-6 text-primary mt-1" />
-                    <div>
-                      <p className="font-semibold">+55 (11) 5196-9381</p>
-                      <p className="text-sm text-muted-foreground">Seg-Sex das 8h às 20h</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start space-x-4">
-                    <Mail className="w-6 h-6 text-primary mt-1" />
-                    <div>
-                      <p className="font-semibold">comercial@automacao360.com.br</p>
-                      <p className="text-sm text-muted-foreground">Resposta em até 2 horas</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start space-x-4">
-                    <MapPin className="w-6 h-6 text-primary mt-1" />
-                    <div>
-                      <p className="font-semibold">Rua 11, 250, 13º andar - Setor Central</p>
-                      <p className="text-sm text-muted-foreground">Goiânia (GO), Brasil - 74015-170</p>
-                      <p className="text-sm text-muted-foreground">Atendimento em todo Brasil</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start space-x-4">
-                    <Clock className="w-6 h-6 text-primary mt-1" />
-                    <div>
-                      <p className="font-semibold">Atendimento Via WhatsApp</p>
-                      <p className="text-sm text-muted-foreground">Seg-Sex das 8h às 20h</p>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Métricas de Sucesso */}
-            <Card className="p-8 bg-primary text-primary-foreground">
-              <CardContent className="p-0">
-                <div className="flex items-center space-x-3 mb-4">
-                  <Check className="w-6 h-6" />
-                  <h3 className="text-2xl font-bold">Junte-se a 350+ Empresas</h3>
-                </div>
-                <p className="text-primary-foreground/90 mb-6">
-                  Que já transformaram suas vendas com a Automação360 e obtiveram resultados excepcionais em menos de 30 dias.
-                </p>
-                
-                <div className="grid grid-cols-2 gap-6">
-                  <div className="text-center">
-                    <div className="text-4xl font-bold mb-2">94%</div>
-                    <div className="text-sm opacity-90">Taxa de Sucesso</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-4xl font-bold mb-2">3x</div>
-                    <div className="text-sm opacity-90">Mais Leads Qualificados</div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
         </div>
       </div>
     </section>
