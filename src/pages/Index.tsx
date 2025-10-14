@@ -13,6 +13,7 @@ import Testimonials from "@/components/Testimonials";
 import Pricing from "@/components/Pricing";
 import DemoForm from "@/components/DemoForm";
 import CTA from "@/components/CTA";
+import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import ExitIntentPopup from "@/components/ExitIntentPopup";
@@ -41,6 +42,7 @@ const Index = () => {
       <Pricing />
       <DemoForm />
       <CTA />
+      <FAQ />
       <Footer />
       
       {/* Componentes flutuantes e funcionais */}
