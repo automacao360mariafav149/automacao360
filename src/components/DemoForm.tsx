@@ -53,26 +53,26 @@ const DemoForm = () => {
           <Card className="p-8">
             <CardContent className="p-0">
               <h3 className="text-2xl font-bold mb-6">
-                Agende sua Demonstração Gratuita
+                Agendar com um especialista
               </h3>
               
               {/* Benefícios */}
               <div className="space-y-3 mb-8">
                 <div className="flex items-center space-x-3">
                   <Check className="w-5 h-5 text-green-500" />
-                  <span className="text-muted-foreground">Demonstração personalizada de 30 minutos</span>
+                  <span className="text-muted-foreground">Apresentação prática e personalizada em 30 minutos</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Check className="w-5 h-5 text-green-500" />
-                  <span className="text-muted-foreground">Análise gratuita do seu processo atual</span>
+                  <span className="text-muted-foreground">Avaliação gratuita da sua operação comercial atual</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Check className="w-5 h-5 text-green-500" />
-                  <span className="text-muted-foreground">Proposta customizada para sua empresa</span>
+                  <span className="text-muted-foreground">Solução feita sob medida para o seu negócio</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Check className="w-5 h-5 text-green-500" />
-                  <span className="text-muted-foreground">Setup gratuito e treinamento incluído</span>
+                  <span className="text-muted-foreground">Implantação rápida com suporte e treinamento inclusos</span>
                 </div>
               </div>
 
