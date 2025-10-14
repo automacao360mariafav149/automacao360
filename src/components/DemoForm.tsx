@@ -163,8 +163,8 @@ const DemoForm = () => {
                 </div>
               ) : (
                 <>
-                  <h3 className="text-2xl font-bold mb-6">
-                    Agendar com um especialista
+                  <h3 className="text-2xl font-bold mb-6 text-primary">
+                    Agendar reunião com um Especialista
                   </h3>
                   
                   {/* Benefícios */}

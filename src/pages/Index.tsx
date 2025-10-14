@@ -11,7 +11,6 @@ import Features from "@/components/Features";
 import Testimonials from "@/components/Testimonials";
 import Pricing from "@/components/Pricing";
 import DemoForm from "@/components/DemoForm";
-import CTA from "@/components/CTA";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
@@ -39,7 +38,6 @@ const Index = () => {
       <Testimonials />
       <Pricing />
       <DemoForm />
-      <CTA />
       <FAQ />
       <Footer />
       
