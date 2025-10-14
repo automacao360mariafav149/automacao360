@@ -1,97 +1,33 @@
 import { Check, ArrowRight, Database, Settings, Phone, BarChart3 } from "lucide-react";
-import { useRef, useEffect } from 'react';
-import { gsap } from 'gsap';
-import './ChromaGrid.css';
+import { Card, CardContent } from "@/components/ui/card";
 
 const HowItWorks = () => {
-  const rootRef = useRef(null);
-  const fadeRef = useRef(null);
-  const setX = useRef(null);
-  const setY = useRef(null);
-  const pos = useRef({ x: 0, y: 0 });
-
   const steps = [
     {
       number: 1,
       icon: Database,
       title: "Conecte seu CRM ou use uma lista de leads",
-      description: "Faça upload da sua lista de contatos ou nossa equipe configura a integração do seu CRM",
-      borderColor: "#3B82F6",
-      gradient: "linear-gradient(145deg, #3B82F6, #1e1b4b)",
+      description: "Faça upload da sua lista de contatos ou nossa equipe configura a integração do seu CRM"
     },
     {
       number: 2,
       icon: Settings,
       title: "Configure Campanhas",
-      description: "Defina scripts, horários e critérios de qualificação",
-      borderColor: "#10B981",
-      gradient: "linear-gradient(180deg, #10B981, #1e1b4b)",
+      description: "Defina scripts, horários e critérios de qualificação"
     },
     {
       number: 3,
       icon: Phone,
       title: "Inicie as Ligações",
-      description: "Nossa IA começa a realizar as ligações automaticamente",
-      borderColor: "#F59E0B",
-      gradient: "linear-gradient(165deg, #F59E0B, #1e1b4b)",
+      description: "Nossa IA começa a realizar as ligações automaticamente"
     },
     {
       number: 4,
       icon: BarChart3,
       title: "Acompanhe Resultados",
-      description: "Monitore performance em tempo real e receba relatórios detalhados",
-      borderColor: "#EF4444",
-      gradient: "linear-gradient(195deg, #EF4444, #1e1b4b)",
+      description: "Monitore performance em tempo real e receba relatórios detalhados"
     }
   ];
-
-  useEffect(() => {
-    const el = rootRef.current;
-    if (!el) return;
-    setX.current = gsap.quickSetter(el, '--x', 'px');
-    setY.current = gsap.quickSetter(el, '--y', 'px');
-    const { width, height } = el.getBoundingClientRect();
-    pos.current = { x: width / 2, y: height / 2 };
-    setX.current(pos.current.x);
-    setY.current(pos.current.y);
-  }, []);
-
-  const moveTo = (x, y) => {
-    gsap.to(pos.current, {
-      x,
-      y,
-      duration: 0.45,
-      ease: "power3.out",
-      onUpdate: () => {
-        setX.current?.(pos.current.x);
-        setY.current?.(pos.current.y);
-      },
-      overwrite: true
-    });
-  };
-
-  const handleMove = e => {
-    const r = rootRef.current.getBoundingClientRect();
-    moveTo(e.clientX - r.left, e.clientY - r.top);
-    gsap.to(fadeRef.current, { opacity: 0, duration: 0.25, overwrite: true });
-  };
-
-  const handleLeave = () => {
-    gsap.to(fadeRef.current, {
-      opacity: 1,
-      duration: 0.6,
-      overwrite: true
-    });
-  };
-
-  const handleCardMove = e => {
-    const card = e.currentTarget;
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    card.style.setProperty('--mouse-x', `${x}px`);
-    card.style.setProperty('--mouse-y', `${y}px`);
-  };
 
   const securityFeatures = [
     "SSL Criptografado",
@@ -112,37 +48,15 @@ const HowItWorks = () => {
           </p>
         </div>
 
-        {/* Passos com ChromaGrid */}
-        <div className="relative">
-          <div 
-            ref={rootRef}
-            className="chroma-grid"
-            style={{
-              '--r': '300px',
-              '--cols': 4,
-              '--rows': 1
-            } as React.CSSProperties}
-            onPointerMove={handleMove}
-            onPointerLeave={handleLeave}
-          >
-            {steps.map((step, index) => (
-              <article
-                key={step.number}
-                className="chroma-card"
-                onMouseMove={handleCardMove}
-                style={{
-                  '--card-border': step.borderColor,
-                  '--card-gradient': step.gradient,
-                  '--mouse-x': '50%',
-                  '--mouse-y': '50%',
-                  '--spotlight-color': 'rgba(255, 255, 255, 0.3)',
-                  cursor: 'default'
-                } as React.CSSProperties}
-              >
-                <div className="chroma-img-wrapper">
-                  <div className="w-full h-full flex flex-col items-center justify-center p-6">
+        {/* Quadro com os 4 passos em cards */}
+        <Card className="p-8 mb-12 border-2 border-primary/20">
+          <CardContent className="p-0">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {steps.map((step, index) => (
+                <Card key={step.number} className="relative border-2 border-primary/10 hover:border-primary/30 transition-all duration-300">
+                  <CardContent className="p-6 text-center">
                     {/* Círculo com número */}
-                    <div className="w-16 h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-2xl font-bold mb-4 relative">
+                    <div className="w-16 h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 relative">
                       {step.number}
                       {/* Seta para o próximo passo (exceto o último) */}
                       {index < steps.length - 1 && (
@@ -153,25 +67,25 @@ const HowItWorks = () => {
                     </div>
                     
                     {/* Ícone */}
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                       <step.icon className="w-6 h-6 text-primary" />
                     </div>
-                  </div>
-                </div>
-                <footer className="chroma-info">
-                  <h3 className="name text-lg font-bold mb-3 text-foreground">
-                    {step.title}
-                  </h3>
-                  <p className="role text-muted-foreground text-sm leading-relaxed">
-                    {step.description}
-                  </p>
-                </footer>
-              </article>
-            ))}
-            <div className="chroma-overlay" />
-            <div ref={fadeRef} className="chroma-fade" />
-          </div>
-        </div>
+                    
+                    {/* Título */}
+                    <h3 className="text-lg font-bold mb-3 text-foreground">
+                      {step.title}
+                    </h3>
+                    
+                    {/* Descrição */}
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      {step.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
 
         {/* Tag Flexibilidade Total */}
         <div className="text-center mb-8">
