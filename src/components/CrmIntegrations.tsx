@@ -56,6 +56,17 @@ const CrmIntegrations = () => {
         </div>
       ),
       ariaLabel: 'HubSpot CRM'
+    },
+    {
+      node: (
+        <div className="flex items-center space-x-2 text-white">
+          <div className="w-8 h-8 bg-blue-600 rounded flex items-center justify-center">
+            <span className="text-white font-bold text-xs">M</span>
+          </div>
+          <span className="font-semibold">Meta</span>
+        </div>
+      ),
+      ariaLabel: 'Meta CRM'
     }
   ];
 
@@ -67,7 +78,7 @@ const CrmIntegrations = () => {
             Integrações com <span className="text-primary">CRM do mundo todo</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Conecte-se com as principais plataformas de CRM e automatize seu processo de vendas
+            Use integrações com os principais CRMs ou sua própria lista de leads para ampliar seu alcance e conversões.
           </p>
         </div>
 
