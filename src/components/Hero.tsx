@@ -8,7 +8,7 @@ const Hero = () => {
           <div className="space-y-8">
             <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
               Como estão suas{" "}
-              <span className="text-primary">vendas</span> hoje?
+              <span className="text-primary">Vendas</span> hoje?
             </h1>
             
             <p className="text-xl text-muted-foreground leading-relaxed">
