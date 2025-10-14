@@ -7,6 +7,7 @@ import RemindersSection from "@/components/RemindersSection";
 import CallForm from "@/components/CallForm";
 import HowItWorks from "@/components/HowItWorks";
 import CrmIntegrations from "@/components/CrmIntegrations";
+import ChromaGridSection from "@/components/ChromaGridSection";
 import Features from "@/components/Features";
 import Testimonials from "@/components/Testimonials";
 import Pricing from "@/components/Pricing";
@@ -34,6 +35,7 @@ const Index = () => {
       <CallForm />
       <HowItWorks />
       <CrmIntegrations />
+      <ChromaGridSection />
       <Features />
       <Testimonials />
       <Pricing />
