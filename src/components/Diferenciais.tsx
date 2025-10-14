@@ -1,4 +1,4 @@
-import { Brain, Code, Target, MessageCircle, Clock, Settings, Smartphone, Map, XCircle, RefreshCcw, MessageSquare } from "lucide-react";
+import { Brain, Code, Target, MessageCircle, Clock, Settings } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Diferenciais = () => {
@@ -32,32 +32,6 @@ const Diferenciais = () => {
       icon: Settings,
       title: "Integração com os principais CRMs",
       description: "Compatível com diversos sistemas, as informações coletadas nas ligações são conectadas ao seu funil em tempo real, sem retrabalho."
-    },
-    // Novos diferenciais
-    {
-      icon: Smartphone, // Ícone para responsividade
-      title: "Responsivo em todos dispositivos",
-      description: "Seu site se adapta perfeitamente a qualquer tela, garantindo a melhor experiência de usuário em desktops, tablets e smartphones."
-    },
-    {
-      icon: MessageSquare, // Ícone para WhatsApp flutuante
-      title: "WhatsApp flutuante para suporte",
-      description: "Ofereça suporte instantâneo aos seus clientes com um botão flutuante de WhatsApp, facilitando a comunicação e aumentando a satisfação."
-    },
-    {
-      icon: Map, // Ícone para heatmap
-      title: "Heatmap para análise de comportamento",
-      description: "Analise o comportamento dos usuários em seu site com heatmaps detalhados, identificando pontos de interesse e otimizando a navegação."
-    },
-    {
-      icon: XCircle, // Ícone para exit intent popup
-      title: "Exit intent popup configurado",
-      description: "Recupere visitantes que estão prestes a sair do site com pop-ups de intenção de saída estratégicos, aumentando suas chances de conversão."
-    },
-    {
-      icon: RefreshCcw, // Ícone para retargeting
-      title: "Retargeting ativado",
-      description: "Mantenha sua marca na mente de visitantes anteriores com campanhas de retargeting eficazes, incentivando o retorno e a conversão."
     }
   ];
 

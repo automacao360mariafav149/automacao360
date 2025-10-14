@@ -13,8 +13,16 @@ import Pricing from "@/components/Pricing";
 import DemoForm from "@/components/DemoForm";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
+import ExitIntentPopup from "@/components/ExitIntentPopup";
+import useHeatmap from "@/hooks/useHeatmap";
+import useRetargeting from "@/hooks/useRetargeting";
 
 const Index = () => {
+  // Ativar funcionalidades de analytics
+  useHeatmap();
+  useRetargeting();
+
   return (
     <div className="min-h-screen">
       <Navbar />
@@ -32,6 +40,10 @@ const Index = () => {
       <DemoForm />
       <CTA />
       <Footer />
+      
+      {/* Componentes flutuantes e funcionais */}
+      <WhatsAppFloat />
+      <ExitIntentPopup />
     </div>
   );
 };
