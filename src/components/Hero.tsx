@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-background">
       <div className="container mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="text-center max-w-4xl mx-auto">
           <div className="space-y-8">
             <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
               Como estão suas{" "}
@@ -20,7 +20,7 @@ const Hero = () => {
             Com a Automação360, sua empresa transforma a forma de prospectar: ligações inteligentes com IA de voz que conversam como humanos, geram leads qualificados em escala e elevam a produtividade da sua operação comercial.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8">
                 Quero Automatizar Minhas Vendas Agora →
               </Button>
@@ -28,11 +28,6 @@ const Hero = () => {
                 Ver Preços e Planos
               </Button>
             </div>
-          </div>
-          
-          {/* Segunda coluna do grid - adicione seu conteúdo aqui */}
-          <div>
-            {/* Coloque aqui uma imagem, ilustração ou outro conteúdo */}
           </div>
         </div>
       </div>

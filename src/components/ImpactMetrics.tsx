@@ -33,6 +33,16 @@ const ImpactMetrics = () => {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
       <div className="container mx-auto">
+        {/* Frase acima dos cards */}
+        <div className="text-center mb-16">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-foreground">
+            Multiplique seu time de vendas com uma IA incansável, precisa e escalável.
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+            Gere mais leads e agende mais reuniões sem contratar ninguém a mais.
+          </p>
+        </div>
+        
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {metrics.map((metric, index) => (
             <Card key={index} className="flex flex-col items-center justify-center p-6 text-center shadow-lg rounded-lg border-2 border-primary/20 hover:border-primary transition-all duration-300">
