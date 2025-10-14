@@ -1,4 +1,4 @@
-import { Brain, Code, Target, MessageCircle, Clock, Settings, Smartphone, Map, XCircle, RefreshCcw } from "lucide-react";
+import { Brain, Code, Target, MessageCircle, Clock, Settings, Smartphone, Map, XCircle, RefreshCcw, MessageSquare } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Diferenciais = () => {
@@ -40,7 +40,7 @@ const Diferenciais = () => {
       description: "Seu site se adapta perfeitamente a qualquer tela, garantindo a melhor experiência de usuário em desktops, tablets e smartphones."
     },
     {
-      icon: MessageCircle, // Ícone para WhatsApp flutuante
+      icon: MessageSquare, // Ícone para WhatsApp flutuante
       title: "WhatsApp flutuante para suporte",
       description: "Ofereça suporte instantâneo aos seus clientes com um botão flutuante de WhatsApp, facilitando a comunicação e aumentando a satisfação."
     },
