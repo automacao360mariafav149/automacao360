@@ -31,7 +31,7 @@ const ImpactMetrics = () => {
   ];
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
+    <section className="pt-12 pb-20 px-4 sm:px-6 lg:px-8 bg-background">
       <div className="container mx-auto">
         {/* Frase acima dos cards */}
         <div className="text-center mb-16">
@@ -39,7 +39,7 @@ const ImpactMetrics = () => {
             Revolucionando vendas e processos com inteligência artificial.
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto text-primary font-semibold">
-            Gere mais leads e agende mais reuniões sem contratar ninguém a mais.
+            Gere mais leads, agende mais reuniões e automatize seus processos sem contratar ninguém a mais.
           </p>
         </div>
         

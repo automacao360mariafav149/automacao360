@@ -118,10 +118,10 @@ const DemoForm = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">
             Pronto para transformar suas{" "}
-            <span className="text-primary">vendas</span>?
+            <span className="text-primary">vendas e processos</span>?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Agende uma demonstração gratuita e descubra como a Automação360 pode revolucionar seus resultados de vendas em apenas 30 dias.
+            Agende uma demonstração gratuita e descubra como a Automação360 pode revolucionar seus resultados de vendas e processos em apenas 30 dias.
           </p>
         </div>
 
