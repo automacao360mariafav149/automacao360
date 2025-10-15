@@ -61,7 +61,7 @@ const FAQ = () => {
   ];
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background" id="faq">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#F8F9FA]" id="faq">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">
@@ -76,7 +76,7 @@ const FAQ = () => {
           {faqData.map((item, index) => (
             <Card 
               key={index} 
-              className="border-2 border-primary/20 hover:border-primary/40 transition-colors cursor-pointer"
+              className="border-2 border-[#0d6efd]/20 hover:border-[#0d6efd]/40 transition-colors cursor-pointer"
               onClick={() => toggleItem(index)}
             >
               <CardContent className="p-0">
@@ -86,13 +86,13 @@ const FAQ = () => {
                       {item.question}
                     </h3>
                     {openItems.includes(index) ? (
-                      <ChevronUp className="w-5 h-5 text-primary flex-shrink-0" />
+                      <ChevronUp className="w-5 h-5 text-[#0d6efd] flex-shrink-0" />
                     ) : (
-                      <ChevronDown className="w-5 h-5 text-primary flex-shrink-0" />
+                      <ChevronDown className="w-5 h-5 text-[#0d6efd] flex-shrink-0" />
                     )}
                   </div>
                   {openItems.includes(index) && (
-                    <div className="mt-4 pt-4 border-t border-primary/20">
+                    <div className="mt-4 pt-4 border-t border-[#0d6efd]/20">
                       <p className="text-muted-foreground text-base leading-relaxed">
                         {item.answer}
                       </p>

@@ -8,25 +8,25 @@ const ImpactMetrics = () => {
       icon: Users,
       value: "100%",
       description: "Leads atendidos instantaneamente",
-      color: "text-brand-purple", // Using brand-purple from tailwind.config.ts
+      color: "text-primary", // Using primary color from tailwind.config.ts
     },
     {
       icon: TrendingUp,
       value: "41%",
       description: "Aumento de Conversão",
-      color: "text-brand-purple", // Using brand-purple from tailwind.config.ts
+      color: "text-primary", // Using primary color from tailwind.config.ts
     },
     {
       icon: BarChart,
       value: "26%",
       description: "Aumento de Comparecimento",
-      color: "text-brand-purple", // Using brand-purple from tailwind.config.ts
+      color: "text-primary", // Using primary color from tailwind.config.ts
     },
     {
       icon: Video,
       value: "37%",
       description: "Reuniões agendadas",
-      color: "text-brand-purple", // Using brand-purple from tailwind.config.ts
+      color: "text-primary", // Using primary color from tailwind.config.ts
     },
   ];
 
@@ -36,7 +36,7 @@ const ImpactMetrics = () => {
         {/* Frase acima dos cards */}
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-foreground">
-            Multiplique seu time de vendas com uma IA incansável, precisa e escalável.
+            Revolucionando vendas e processos com inteligência artificial.
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto text-primary font-semibold">
             Gere mais leads e agende mais reuniões sem contratar ninguém a mais.

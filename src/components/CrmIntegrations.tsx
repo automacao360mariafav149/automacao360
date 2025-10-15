@@ -4,8 +4,8 @@ const CrmIntegrations = () => {
   const crmLogos = [
     {
       node: (
-        <div className="flex items-center space-x-2 text-white">
-          <div className="w-8 h-8 bg-blue-500 rounded flex items-center justify-center">
+        <div className="flex items-center space-x-2 text-[#0d6efd]">
+          <div className="w-8 h-8 bg-[#0d6efd] rounded flex items-center justify-center">
             <span className="text-white font-bold text-sm">M</span>
           </div>
           <span className="font-semibold">Microsoft</span>
@@ -15,8 +15,8 @@ const CrmIntegrations = () => {
     },
     {
       node: (
-        <div className="flex items-center space-x-2 text-white">
-          <div className="w-8 h-8 bg-blue-400 rounded flex items-center justify-center">
+        <div className="flex items-center space-x-2 text-[#0d6efd]">
+          <div className="w-8 h-8 bg-[#0d6efd] rounded flex items-center justify-center">
             <span className="text-white font-bold text-xs">SF</span>
           </div>
           <span className="font-semibold">Salesforce</span>
@@ -26,8 +26,8 @@ const CrmIntegrations = () => {
     },
     {
       node: (
-        <div className="flex items-center space-x-2 text-white">
-          <div className="w-8 h-8 bg-green-500 rounded flex items-center justify-center">
+        <div className="flex items-center space-x-2 text-[#198754]">
+          <div className="w-8 h-8 bg-[#198754] rounded flex items-center justify-center">
             <span className="text-white font-bold text-xs">P</span>
           </div>
           <span className="font-semibold">Pipedrive</span>
@@ -37,8 +37,8 @@ const CrmIntegrations = () => {
     },
     {
       node: (
-        <div className="flex items-center space-x-2 text-white">
-          <div className="w-8 h-8 bg-orange-500 rounded flex items-center justify-center">
+        <div className="flex items-center space-x-2 text-[#ff6b35]">
+          <div className="w-8 h-8 bg-[#ff6b35] rounded flex items-center justify-center">
             <span className="text-white font-bold text-xs">N</span>
           </div>
           <span className="font-semibold">Nectar</span>
@@ -48,8 +48,8 @@ const CrmIntegrations = () => {
     },
     {
       node: (
-        <div className="flex items-center space-x-2 text-white">
-          <div className="w-8 h-8 bg-orange-400 rounded flex items-center justify-center">
+        <div className="flex items-center space-x-2 text-[#ff6b35]">
+          <div className="w-8 h-8 bg-[#ff6b35] rounded flex items-center justify-center">
             <span className="text-white font-bold text-xs">H</span>
           </div>
           <span className="font-semibold">HubSpot</span>
@@ -59,8 +59,8 @@ const CrmIntegrations = () => {
     },
     {
       node: (
-        <div className="flex items-center space-x-2 text-white">
-          <div className="w-8 h-8 bg-blue-600 rounded flex items-center justify-center">
+        <div className="flex items-center space-x-2 text-[#0d6efd]">
+          <div className="w-8 h-8 bg-[#0d6efd] rounded flex items-center justify-center">
             <span className="text-white font-bold text-xs">M</span>
           </div>
           <span className="font-semibold">Meta</span>
@@ -71,7 +71,7 @@ const CrmIntegrations = () => {
   ];
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background" id="integracoes">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-[#F8F9FA]" id="integracoes">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">

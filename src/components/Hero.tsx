@@ -17,7 +17,7 @@ const Hero = () => {
             </div> */}
             
             <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-              Aumente sua produtividade em vendas com nossa IA de voz, que simula vendedores.
+              Automação de voz, texto e fluxos inteligentes para escalar negócios.
             </p>
             <a href="/#agendar-reuniao" className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-12 px-6 py-3 bg-primary text-primary-foreground hover:bg-primary/90 text-lg">
               Quero Automatizar Minhas Vendas Agora →

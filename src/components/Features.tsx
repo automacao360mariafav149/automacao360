@@ -49,10 +49,10 @@ const Features = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <Card key={index} className="border-2 hover:border-primary transition-all duration-300 hover:shadow-lg">
+            <Card key={index} className="border-2 border-[#0d6efd]/20 hover:border-[#0d6efd] transition-all duration-300 hover:shadow-lg">
               <CardHeader>
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                  <feature.icon className="w-6 h-6 text-primary" />
+                <div className="w-12 h-12 rounded-lg bg-[#0d6efd]/10 flex items-center justify-center mb-4">
+                  <feature.icon className="w-6 h-6 text-[#0d6efd]" />
                 </div>
                 <CardTitle className="text-xl">{feature.title}</CardTitle>
               </CardHeader>

@@ -33,16 +33,16 @@ const ExitIntentPopup = () => {
       <div className="bg-white rounded-lg p-8 max-w-md w-full relative">
         <button
           onClick={() => setIsVisible(false)}
-          className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
+          className="absolute top-4 right-4 text-muted-foreground hover:text-foreground"
         >
           <X className="w-6 h-6" />
         </button>
         
-        <h3 className="text-2xl font-bold text-gray-900 mb-4">
+        <h3 className="text-2xl font-bold text-foreground mb-4">
           Não vá ainda! 🚀
         </h3>
         
-        <p className="text-gray-600 mb-6">
+        <p className="text-muted-foreground mb-6">
           {/* Que tal conhecer como a Automação360 pode dobrar suas vendas em 90 dias? */}
           Fale com nossa IA agora e veja a mágica acontecer!
         </p>
@@ -54,13 +54,13 @@ const ExitIntentPopup = () => {
               window.open('https://wa.me/5511999999999', '_blank');
               setIsVisible(false);
             }}
-            className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+            className="bg-secondary hover:bg-secondary/90 text-secondary-foreground px-6 py-3 rounded-lg font-semibold transition-colors"
           >
             Falar com a IA Agora
           </button>
           <button
             onClick={() => setIsVisible(false)}
-            className="border border-gray-300 hover:bg-gray-50 text-gray-700 px-6 py-3 rounded-lg font-semibold transition-colors"
+            className="border border-border hover:bg-muted text-foreground px-6 py-3 rounded-lg font-semibold transition-colors"
           >
             Talvez Depois
           </button>

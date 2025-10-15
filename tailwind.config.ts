@@ -14,27 +14,28 @@ export default {
     },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
+        border: '#dee2e6', // Borda clara
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        background: '#FFFFFF',
+        foreground: '#212529',
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-          hover: "hsl(var(--primary-hover))", // Nova cor para hover
+          DEFAULT: '#0d6efd', // Azul moderno
+          foreground: '#FFFFFF',
+          hover: '#0b5ed7'
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: '#198754', // Verde vibrante (para CTAs principais)
+          foreground: '#FFFFFF',
+          hover: '#157347'
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
         },
         muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
+          DEFAULT: '#F8F9FA', // Cinza muito claro para fundos secundários
+          foreground: '#6c757d' // Cinza médio para texto secundário
         },
         accent: {
           DEFAULT: "hsl(var(--accent))",
@@ -45,14 +46,14 @@ export default {
           foreground: "hsl(var(--popover-foreground))",
         },
         card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
+          DEFAULT: '#FFFFFF', // Fundo de cards
+          foreground: '#212529' // Texto de cards
         },
         brand: {
-          purple: "hsl(var(--brand-purple))",
-          "purple-light": "hsl(var(--brand-purple-light))",
-          dark: "hsl(var(--brand-dark))",
-          "dark-blue": "#1a1a1e", // Novo azul escuro para o rodapé
+          blue: '#0d6efd',
+          dark: '#212529', // Grafite escuro
+          green: '#198754',
+          light: '#F8F9FA'
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
