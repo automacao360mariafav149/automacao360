@@ -3,7 +3,7 @@ const Pricing = () => {
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/50" id="precos">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">
+          <h2 className="text-4xl font-bold mb-4 text-primary">
             Planos que se adaptam ao seu negócio
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">

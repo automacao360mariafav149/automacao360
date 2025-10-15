@@ -39,11 +39,11 @@ const ExitIntentPopup = () => {
         </button>
         
         <h3 className="text-2xl font-bold text-gray-900 mb-4">
-          Espera! Não vá embora ainda! 🚀
+          Não vá ainda! 🚀
         </h3>
         
         <p className="text-gray-600 mb-6">
-          Que tal conhecer como a Automação360 pode dobrar suas vendas em 90 dias? 
+          {/* Que tal conhecer como a Automação360 pode dobrar suas vendas em 90 dias? */}
           Fale com nossa IA agora e veja a mágica acontecer!
         </p>
         

@@ -38,7 +38,7 @@ const ImpactMetrics = () => {
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-foreground">
             Multiplique seu time de vendas com uma IA incansável, precisa e escalável.
           </h2>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto text-primary font-semibold">
             Gere mais leads e agende mais reuniões sem contratar ninguém a mais.
           </p>
         </div>

@@ -52,6 +52,7 @@ export default {
           purple: "hsl(var(--brand-purple))",
           "purple-light": "hsl(var(--brand-purple-light))",
           dark: "hsl(var(--brand-dark))",
+          "dark-blue": "#1a1a1e", // Novo azul escuro para o rodapé
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",

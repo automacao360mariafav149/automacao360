@@ -109,12 +109,9 @@ const FAQ = () => {
             Ainda tem dúvidas? Nossa equipe está pronta para ajudar!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-lg font-semibold transition-colors">
+            <a href="/#agendar-reuniao" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-lg font-semibold transition-colors">
               Falar com Especialista
-            </button>
-            <button className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 rounded-lg font-semibold transition-colors">
-              Agendar Demo
-            </button>
+            </a>
           </div>
         </div>
       </div>

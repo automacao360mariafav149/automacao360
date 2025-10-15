@@ -1,9 +1,8 @@
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, MessageSquare } from "lucide-react";
 
-const QualificationSchedulingSection = () => {
+const WhatsAppMessageSection = () => {
   const features = [
-    "Nosso agente liga para seus leads e agenda reuniões com quem realmente tem potencial de compra",
-    "Sua equipe foca apenas no fechamento, enquanto a IA cuida da prospecção e qualificação",
+    "Dispare Mensagem no Whatsapp em Massa com fotos, vídeos ou documentos para seus leads e contatos, integrado com a IA para responder aos leads.",
   ];
 
   return (
@@ -11,7 +10,7 @@ const QualificationSchedulingSection = () => {
       <div className="container mx-auto">
         <div>
           <h2 className="text-4xl font-bold mb-8">
-          Agendamento Inteligente de Leads
+            Disparo de Mensagem no Whatsapp
           </h2>
           <ul className="space-y-4">
             {features.map((feature, index) => (
@@ -27,4 +26,4 @@ const QualificationSchedulingSection = () => {
   );
 };
 
-export default QualificationSchedulingSection;
+export default WhatsAppMessageSection;

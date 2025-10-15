@@ -1,0 +1,253 @@
+/* ============================================
+   CAROUSEL.CSS - Cores do seu site
+   Fundo preto + Laranja #ff4d00
+   ============================================ */
+
+/* Wrapper principal */
+.site-carousel-wrapper {
+  min-height: 100vh;
+  background-color: #0d0d0d;
+  padding: 60px 20px;
+}
+
+.carousel-section-site {
+  margin-bottom: 80px;
+}
+
+/* Cabeçalhos */
+.section-header-site {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title-site {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.text-highlight {
+  color: #ff4d00;
+}
+
+.section-subtitle-site {
+  font-size: 1.125rem;
+  color: #b0b0b0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Wrapper do carrossel */
+.carousel-wrapper-site {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+}
+
+/* Container do carrossel */
+.carousel-container-site {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #333333;
+  border-radius: 24px;
+  padding: 16px;
+  background-color: #1a1a1a;
+}
+
+.carousel-track-site {
+  display: flex;
+}
+
+/* Cards do carrossel */
+.carousel-item-site {
+  position: relative;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  border: 1px solid #333333;
+  border-radius: 16px;
+  background-color: #1a1a1a;
+  overflow: hidden;
+  cursor: grab;
+  transition: all 0.4s ease;
+  min-height: 380px;
+  padding: 0;
+}
+
+.carousel-item-site:hover {
+  border-color: #ff4d00;
+  box-shadow: 0 8px 32px rgba(255, 77, 0, 0.2);
+  transform: translateY(-4px);
+}
+
+.carousel-item-site:active {
+  cursor: grabbing;
+}
+
+/* Header do card com ícone */
+.carousel-item-header-site {
+  padding: 24px 24px 0 24px;
+  width: 100%;
+}
+
+.carousel-icon-container-site {
+  display: flex;
+  height: 56px;
+  width: 56px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(255, 77, 0, 0.1);
+  border: 1px solid rgba(255, 77, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.carousel-item-site:hover .carousel-icon-container-site {
+  background-color: rgba(255, 77, 0, 0.15);
+  border-color: rgba(255, 77, 0, 0.5);
+  transform: scale(1.1);
+}
+
+.carousel-icon-site {
+  width: 28px;
+  height: 28px;
+  color: #ff4d00;
+}
+
+/* Conteúdo do card */
+.carousel-item-content-site {
+  padding: 24px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-item-title-site {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #ffffff;
+  line-height: 1.4;
+}
+
+.carousel-item-description-site {
+  font-size: 0.9375rem;
+  color: #b0b0b0;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Indicadores */
+.carousel-indicators-container-site {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.carousel-indicators-site {
+  display: flex;
+  gap: 8px;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 300px;
+}
+
+.carousel-indicator-site {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carousel-indicator-site.active {
+  background-color: #ff4d00;
+  width: 24px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(255, 77, 0, 0.5);
+}
+
+.carousel-indicator-site.inactive {
+  background-color: #555555;
+}
+
+.carousel-indicator-site:hover {
+  background-color: #ff6a2e;
+}
+
+/* Efeito de brilho no hover */
+.carousel-item-site::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 77, 0, 0.1),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.carousel-item-site:hover::before {
+  left: 100%;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .section-title-site {
+    font-size: 2rem;
+  }
+  
+  .section-subtitle-site {
+    font-size: 1rem;
+  }
+  
+  .carousel-wrapper-site {
+    min-height: 450px;
+  }
+  
+  .carousel-item-site {
+    min-height: 350px;
+  }
+  
+  .carousel-indicators-site {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-carousel-wrapper {
+    padding: 40px 16px;
+  }
+  
+  .section-title-site {
+    font-size: 1.75rem;
+  }
+  
+  .carousel-section-site {
+    margin-bottom: 60px;
+  }
+  
+  .carousel-item-site {
+    min-height: 320px;
+  }
+  
+  .carousel-item-title-site {
+    font-size: 1rem;
+  }
+  
+  .carousel-item-description-site {
+    font-size: 0.875rem;
+  }
+}
