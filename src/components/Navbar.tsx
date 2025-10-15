@@ -8,7 +8,7 @@ const Navbar = () => {
               Automação360
             </div>
             <p className="text-muted-foreground text-sm hidden md:block">
-              Revolucionando vendas e processos com inteligência artificial.
+              Revolucionando <span className="text-primary">VENDAS</span> <span className="text-black">e</span> <span className="text-primary">PROCESSOS</span> com inteligência artificial.
             </p>
           </div>
           <div className="hidden md:flex space-x-4 items-center">

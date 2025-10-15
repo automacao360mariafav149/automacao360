@@ -36,7 +36,7 @@ const ImpactMetrics = () => {
         {/* Frase acima dos cards */}
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-foreground">
-            Revolucionando vendas e processos com inteligência artificial.
+            Revolucionando <span className="text-primary">VENDAS</span> <span className="text-black">e</span> <span className="text-primary">PROCESSOS</span> com inteligência artificial.
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto text-primary font-semibold">
             Gere mais leads e agende mais reuniões sem contratar ninguém a mais.

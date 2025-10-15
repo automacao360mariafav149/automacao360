@@ -44,10 +44,10 @@ const HowItWorks = () => {
             {/* Título e Subtítulo */}
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold mb-4 text-white">
-                Como Começar em 4 Passos
+                4 passos para sua IA começar a ligar e vender por você
               </h2>
               <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-                Configure sua campanha rapidamente e comece a ver resultados
+                Configure campanhas de voz inteligentes e veja suas vendas crescerem no automático
               </p>
             </div>
 
