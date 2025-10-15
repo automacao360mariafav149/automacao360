@@ -2,7 +2,7 @@ name: Deploy to HostGator
 
 on:
   push:
-    branches: [ branch ]
+    branches: [ master ]
 
 jobs:
   deploy:
