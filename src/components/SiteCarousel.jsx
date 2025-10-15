@@ -113,10 +113,10 @@ export default function SiteCarousel() {
       <section className="carousel-section-site" id="solucoes">
         <div className="section-header-site">
           <h2 className="section-title-site">
-            Soluções que <span className="text-highlight">transformam vendas</span>
+            Soluções que <span className="text-highlight">transformam vendas e processos</span>
           </h2>
           <p className="section-subtitle-site">
-            Descubra como nossa tecnologia pode revolucionar sua operação comercial
+            Descubra como nossa tecnologia pode revolucionar sua operação comercial e processos empresariais
           </p>
         </div>
         
