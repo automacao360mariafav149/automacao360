@@ -13,7 +13,7 @@ const Pricing = () => {
         
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-8">
           {/* Plano 1: Ligação por IA */}
-          <div className="bg-gradient-to-br from-[#6f42c1] to-[#4c2a85] p-6 rounded-lg text-white relative overflow-hidden">
+          <div className="bg-gradient-to-br from-[#6f42c1] to-[#4c2a85] p-8 rounded-lg text-white relative">
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <div className="bg-[#a855f7] px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2">
                 <span>⭐</span>
@@ -21,7 +21,7 @@ const Pricing = () => {
               </div>
             </div>
             
-            <div className="text-center mt-6">
+            <div className="text-center pt-4">
               <h3 className="text-2xl font-bold mb-3">Ligação por IA</h3>
               <div className="text-4xl font-bold mb-1">R$ 1.499<span className="text-lg text-gray-300">/mês</span></div>
               <p className="text-gray-300 text-sm mb-4">no contrato anual</p>
@@ -60,20 +60,15 @@ const Pricing = () => {
                 <span className="text-xs">Recomendado para: equipes de vendas de 2-5 pessoas</span>
               </div>
 
-              {/* Observação dentro do card */}
-              <div className="bg-yellow-500/20 border border-yellow-400/30 rounded-lg p-3">
-                <div className="flex items-center gap-2 mb-1">
-                  <span className="text-yellow-300 text-sm">⚠️</span>
-                </div>
-                <p className="text-yellow-100 text-xs">
-                  Dependendo do projeto, poderá ocorrer valor adicional para implantação.
-                </p>
-              </div>
+              {/* Observação simplificada */}
+              <p className="text-yellow-200 text-xs">
+                Dependendo do projeto, poderá ocorrer valor adicional para implantação.
+              </p>
             </div>
           </div>
 
           {/* Plano 2: Agente de Texto e Automação */}
-          <div className="bg-gradient-to-br from-[#0d6efd] to-[#0b5ed7] p-6 rounded-lg text-white relative overflow-hidden">
+          <div className="bg-gradient-to-br from-[#0d6efd] to-[#0b5ed7] p-8 rounded-lg text-white relative">
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <div className="bg-[#6ea8fe] px-4 py-2 rounded-full text-sm font-semibold flex items-center gap-2">
                 <span>🚀</span>
@@ -81,7 +76,7 @@ const Pricing = () => {
               </div>
             </div>
             
-            <div className="text-center mt-6">
+            <div className="text-center pt-4">
               <h3 className="text-2xl font-bold mb-3">Agente de Texto & Automação</h3>
               <div className="text-4xl font-bold mb-1">R$ 599<span className="text-lg text-gray-300">/mês</span></div>
               <p className="text-gray-300 text-sm mb-4">no contrato anual</p>
@@ -120,15 +115,10 @@ const Pricing = () => {
                 <span className="text-xs">Recomendado para: empresas que querem automatizar atendimento</span>
               </div>
 
-              {/* Observação dentro do card */}
-              <div className="bg-yellow-500/20 border border-yellow-400/30 rounded-lg p-3">
-                <div className="flex items-center gap-2 mb-1">
-                  <span className="text-yellow-300 text-sm">⚠️</span>
-                </div>
-                <p className="text-yellow-100 text-xs">
-                  Dependendo do projeto, poderá ocorrer valor adicional para implantação.
-                </p>
-              </div>
+              {/* Observação simplificada */}
+              <p className="text-yellow-200 text-xs">
+                Dependendo do projeto, poderá ocorrer valor adicional para implantação.
+              </p>
             </div>
           </div>
         </div>
