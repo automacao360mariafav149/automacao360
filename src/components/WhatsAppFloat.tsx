@@ -1,7 +1,7 @@
 import { MessageCircle } from "lucide-react";
 
 const WhatsAppFloat = () => {
-  const whatsappNumber = "5511999999999"; // Substitua pelo número real
+  const whatsappNumber = "5531992963254"; // Número atualizado
   const message = "Olá! Gostaria de saber mais sobre a Automação360.";
 
   const handleWhatsAppClick = () => {

@@ -51,7 +51,7 @@ const ExitIntentPopup = () => {
           <button
             onClick={() => {
               // Aqui você pode adicionar lógica para redirecionar para WhatsApp ou formulário
-              window.open('https://wa.me/5511999999999', '_blank');
+              window.open('https://wa.me/5531992963254', '_blank');
               setIsVisible(false);
             }}
             className="bg-secondary hover:bg-secondary/90 text-secondary-foreground px-6 py-3 rounded-lg font-semibold transition-colors"

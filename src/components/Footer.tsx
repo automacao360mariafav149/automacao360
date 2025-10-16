@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Linkedin, Instagram } from "lucide-react";
+import { Phone, Mail, Linkedin, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -16,15 +16,11 @@ const Footer = () => {
           <div className="space-y-2">
             <div className="flex items-center space-x-2">
               <Phone className="w-5 h-5 text-primary" />
-              <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">+55 (11) 99999-9999</a>
+              <a href="https://wa.me/5531992963254" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">+55 (31) 99296-3254</a>
             </div>
             <div className="flex items-center space-x-2">
               <Mail className="w-5 h-5 text-primary" />
               <a href="mailto:contato@automacao360.com.br" className="hover:text-primary transition-colors">contato@automacao360.com.br</a>
-            </div>
-            <div className="flex items-center space-x-2">
-              <MapPin className="w-5 h-5 text-primary" />
-              <span className="text-gray-400">Rua 11, 250, 13º andar - Setor Central, Goiânia (GO), Brasil - 74015-170</span>
             </div>
           </div>
         </div>
@@ -52,7 +48,7 @@ const Footer = () => {
         <div>
           <h4 className="font-semibold text-gray-100 mb-4">Suporte</h4>
           <ul className="space-y-2">
-            <li><a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Contato (WhatsApp)</a></li>
+            <li><a href="https://wa.me/5531992963254" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Contato (WhatsApp)</a></li>
             <li><a href="#" className="hover:text-primary transition-colors">Central de Ajuda</a></li>
             <li><a href="#" className="hover:text-primary transition-colors">Status</a></li>
           </ul>
