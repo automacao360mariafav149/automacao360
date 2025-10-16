@@ -6,43 +6,139 @@ const PoliticaDePrivacidade = () => {
       <div className="container mx-auto max-w-4xl">
         <h1 className="text-4xl font-bold mb-8 text-center">Política de Privacidade</h1>
         
-        <p className="mb-4 text-muted-foreground">
-          Bem-vindo à Política de Privacidade da Automação360. Esta página descreve como coletamos, usamos e protegemos suas informações pessoais.
+        <p className="mb-8 text-muted-foreground text-center">
+          <strong>Última atualização: Outubro de 2025</strong>
         </p>
 
-        <h2 className="text-2xl font-semibold mb-4">1. Coleta de Informações</h2>
-        <p className="mb-4 text-muted-foreground">
-          Coletamos informações que você nos fornece diretamente, como nome, endereço de e-mail e número de telefone, quando você interage com nossos serviços, como preencher formulários, agendar demonstrações ou se comunicar conosco.
-        </p>
+        <div className="space-y-8">
+          <section>
+            <h2 className="text-2xl font-semibold mb-4 text-primary">1. Informações Gerais</h2>
+            <p className="mb-4 text-muted-foreground">
+              A Mary Helen Pinton Favoretto Duarte, pessoa jurídica de direito privado, inscrita no CNPJ sob o nº 37.437.136/0001-73, com sede na Rua Joaquim Horta Costa, 120 – CEP 32042-340 – Contagem/MG, leva a sua privacidade a sério e zela pela segurança e proteção de dados de todos os seus usuários.
+            </p>
+            <p className="mb-4 text-muted-foreground">
+              Esta Política de Privacidade tem como objetivo informar de forma clara e transparente como coletamos, usamos, armazenamos e protegemos seus dados pessoais, em conformidade com a Lei Geral de Proteção de Dados Pessoais (LGPD).
+            </p>
+          </section>
 
-        <h2 className="text-2xl font-semibold mb-4">2. Uso das Informações</h2>
-        <p className="mb-4 text-muted-foreground">
-          Utilizamos as informações coletadas para fornecer e melhorar nossos serviços, personalizar sua experiência, enviar comunicações de marketing (com seu consentimento) e garantir a segurança da plataforma.
-        </p>
+          <section>
+            <h2 className="text-2xl font-semibold mb-4 text-primary">2. Informações que Coletamos</h2>
+            <p className="mb-4 text-muted-foreground">
+              Podemos coletar informações pessoais de diferentes formas, incluindo quando você acessa nossos serviços, preenche formulários, solicita informações ou utiliza nossa plataforma. Entre os dados coletados estão:
+            </p>
+            <ul className="list-disc list-inside mb-4 text-muted-foreground space-y-2">
+              <li>Nome completo;</li>
+              <li>E-mail, telefone e demais informações de contato;</li>
+              <li>Dados da empresa (quando aplicável);</li>
+              <li>Informações de uso do site ou plataforma;</li>
+              <li>Mensagens e comunicações com nossa equipe.</li>
+            </ul>
+          </section>
 
-        <h2 className="text-2xl font-semibold mb-4">3. Compartilhamento de Informações</h2>
-        <p className="mb-4 text-muted-foreground">
-          Não compartilhamos suas informações pessoais com terceiros, exceto quando necessário para a prestação de serviços (por exemplo, com provedores de serviços de hospedagem ou análise de dados), cumprimento de obrigações legais ou com seu consentimento explícito.
-        </p>
+          <section>
+            <h2 className="text-2xl font-semibold mb-4 text-primary">3. Como Utilizamos suas Informações</h2>
+            <p className="mb-4 text-muted-foreground">
+              Os dados coletados podem ser utilizados para:
+            </p>
+            <ul className="list-disc list-inside mb-4 text-muted-foreground space-y-2">
+              <li>Fornecer e aprimorar nossos serviços e produtos;</li>
+              <li>Entrar em contato com você sobre atualizações, promoções ou informações importantes;</li>
+              <li>Oferecer suporte e atendimento personalizado;</li>
+              <li>Cumprir obrigações legais ou regulatórias.</li>
+            </ul>
+          </section>
 
-        <h2 className="text-2xl font-semibold mb-4">4. Segurança dos Dados</h2>
-        <p className="mb-4 text-muted-foreground">
-          Implementamos medidas de segurança técnicas e organizacionais para proteger suas informações contra acesso não autorizado, alteração, divulgação ou destruição. No entanto, nenhum método de transmissão pela internet ou de armazenamento eletrônico é 100% seguro.
-        </p>
+          <section>
+            <h2 className="text-2xl font-semibold mb-4 text-primary">4. Compartilhamento de Informações</h2>
+            <p className="mb-4 text-muted-foreground">
+              A empresa não vende ou compartilha seus dados pessoais com terceiros, exceto:
+            </p>
+            <ul className="list-disc list-inside mb-4 text-muted-foreground space-y-2">
+              <li>Quando houver consentimento explícito do titular;</li>
+              <li>Para prestadores de serviços parceiros (como hospedagem, meios de pagamento ou envio de comunicações), sempre com medidas de segurança;</li>
+              <li>Para cumprimento de obrigações legais ou determinação de autoridades.</li>
+            </ul>
+          </section>
 
-        <h2 className="text-2xl font-semibold mb-4">5. Seus Direitos</h2>
-        <p className="mb-4 text-muted-foreground">
-          Você tem o direito de acessar, corrigir, atualizar ou excluir suas informações pessoais. Para exercer esses direitos, entre em contato conosco através dos canais disponíveis em nosso site.
-        </p>
+          <section>
+            <h2 className="text-2xl font-semibold mb-4 text-primary">5. Segurança dos Dados</h2>
+            <p className="mb-4 text-muted-foreground">
+              Adotamos medidas de segurança técnicas e administrativas para proteger suas informações contra acessos não autorizados, alterações, divulgações ou destruições indevidas, incluindo:
+            </p>
+            <ul className="list-disc list-inside mb-4 text-muted-foreground space-y-2">
+              <li>Criptografia SSL;</li>
+              <li>Controles de acesso restrito;</li>
+              <li>Monitoramento contínuo da infraestrutura.</li>
+            </ul>
+          </section>
 
-        <h2 className="text-2xl font-semibold mb-4">6. Alterações a Esta Política</h2>
-        <p className="mb-4 text-muted-foreground">
-          Podemos atualizar esta Política de Privacidade periodicamente. Notificaremos você sobre quaisquer alterações publicando a nova política em nosso site. Recomendamos que você revise esta página regularmente.
-        </p>
+          <section>
+            <h2 className="text-2xl font-semibold mb-4 text-primary">6. Seus Direitos (LGPD)</h2>
+            <p className="mb-4 text-muted-foreground">
+              De acordo com a LGPD, você tem direito a:
+            </p>
+            <ul className="list-disc list-inside mb-4 text-muted-foreground space-y-2">
+              <li>Confirmar a existência de tratamento de dados;</li>
+              <li>Acessar seus dados pessoais;</li>
+              <li>Corrigir dados incompletos ou desatualizados;</li>
+              <li>Solicitar anonimização, bloqueio ou exclusão de dados;</li>
+              <li>Revogar consentimentos concedidos.</li>
+            </ul>
+            <p className="mb-4 text-muted-foreground">
+              Para exercer seus direitos, entre em contato pelos canais indicados no item 10.
+            </p>
+          </section>
 
-        <p className="text-muted-foreground mt-8 text-sm">
-          Última atualização: 25 de Outubro de 2025
-        </p>
+          <section>
+            <h2 className="text-2xl font-semibold mb-4 text-primary">7. Retenção de Dados</h2>
+            <p className="mb-4 text-muted-foreground">
+              Os dados pessoais serão mantidos apenas pelo tempo necessário para cumprir as finalidades descritas nesta política, exceto quando a legislação exigir prazos maiores.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold mb-4 text-primary">8. Cookies e Tecnologias Similares</h2>
+            <p className="mb-4 text-muted-foreground">
+              Utilizamos cookies para melhorar sua experiência, personalizar conteúdo e analisar tráfego. Você pode gerenciar suas preferências diretamente nas configurações do navegador.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold mb-4 text-primary">9. Alterações nesta Política</h2>
+            <p className="mb-4 text-muted-foreground">
+              Esta Política de Privacidade poderá ser atualizada a qualquer momento, sempre com a nova data de atualização no topo desta página. Mudanças significativas poderão ser comunicadas por e-mail ou avisos no site.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold mb-4 text-primary">10. Contato</h2>
+            <p className="mb-4 text-muted-foreground">
+              Para dúvidas ou solicitações sobre seus dados pessoais, entre em contato:
+            </p>
+            <div className="bg-muted p-6 rounded-lg space-y-3">
+              <div className="flex items-center space-x-3">
+                <span className="text-2xl">📧</span>
+                <span className="text-muted-foreground">E-mail: <a href="mailto:contato@automacaodigital360.com.br" className="text-primary hover:underline">contato@automacaodigital360.com.br</a></span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <span className="text-2xl">📞</span>
+                <span className="text-muted-foreground">Telefone: <a href="https://wa.me/5531992963254" className="text-primary hover:underline">+55 (31) 99296-3254</a></span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <span className="text-2xl">📍</span>
+                <span className="text-muted-foreground">Endereço: Rua Joaquim Horta Costa, 120 – CEP 32042-340 – Contagem/MG</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <span className="text-2xl">🧾</span>
+                <span className="text-muted-foreground">CNPJ: 37.437.136/0001-73</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <span className="text-2xl">👤</span>
+                <span className="text-muted-foreground">Responsável legal: Mary Helen Pinton Favoretto Duarte – CPF 278.516.708-29</span>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
   );
