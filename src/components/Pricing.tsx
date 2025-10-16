@@ -11,7 +11,7 @@ const Pricing = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-8">
           {/* Plano 1: Ligação por IA */}
           <div className="bg-gradient-to-br from-[#6f42c1] to-[#4c2a85] p-6 rounded-lg text-white relative overflow-hidden">
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -21,7 +21,7 @@ const Pricing = () => {
               </div>
             </div>
             
-            <div className="text-center mt-4">
+            <div className="text-center mt-6">
               <h3 className="text-2xl font-bold mb-3">Ligação por IA</h3>
               <div className="text-4xl font-bold mb-1">R$ 1.499<span className="text-lg text-gray-300">/mês</span></div>
               <p className="text-gray-300 text-sm mb-4">no contrato anual</p>
@@ -55,30 +55,20 @@ const Pricing = () => {
                 </div>
               </div>
               
-              <div className="flex items-center gap-2 mb-3 text-yellow-300">
+              <div className="flex items-center gap-2 mb-4 text-yellow-300">
                 <span>👍</span>
                 <span className="text-xs">Recomendado para: equipes de vendas de 2-5 pessoas</span>
               </div>
 
               {/* Observação dentro do card */}
-              <div className="bg-yellow-500/20 border border-yellow-400/30 rounded-lg p-3 mb-4">
+              <div className="bg-yellow-500/20 border border-yellow-400/30 rounded-lg p-3">
                 <div className="flex items-center gap-2 mb-1">
                   <span className="text-yellow-300 text-sm">⚠️</span>
-                  <span className="text-yellow-200 text-xs font-semibold">Importante</span>
                 </div>
                 <p className="text-yellow-100 text-xs">
                   Dependendo do projeto, poderá ocorrer valor adicional para implantação.
                 </p>
               </div>
-              
-              <a 
-                href="https://wa.me/5531992963254?text=Olá! Gostaria de saber mais sobre o plano de Ligação por IA (R$ 1.499/mês)." 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-full bg-[#a855f7] hover:bg-[#9333ea] text-white py-3 rounded-lg font-semibold transition-colors block text-center"
-              >
-                Iniciar Agora
-              </a>
             </div>
           </div>
 
@@ -91,7 +81,7 @@ const Pricing = () => {
               </div>
             </div>
             
-            <div className="text-center mt-4">
+            <div className="text-center mt-6">
               <h3 className="text-2xl font-bold mb-3">Agente de Texto & Automação</h3>
               <div className="text-4xl font-bold mb-1">R$ 599<span className="text-lg text-gray-300">/mês</span></div>
               <p className="text-gray-300 text-sm mb-4">no contrato anual</p>
@@ -125,32 +115,35 @@ const Pricing = () => {
                 </div>
               </div>
               
-              <div className="flex items-center gap-2 mb-3 text-yellow-300">
+              <div className="flex items-center gap-2 mb-4 text-yellow-300">
                 <span>💼</span>
                 <span className="text-xs">Recomendado para: empresas que querem automatizar atendimento</span>
               </div>
 
               {/* Observação dentro do card */}
-              <div className="bg-yellow-500/20 border border-yellow-400/30 rounded-lg p-3 mb-4">
+              <div className="bg-yellow-500/20 border border-yellow-400/30 rounded-lg p-3">
                 <div className="flex items-center gap-2 mb-1">
                   <span className="text-yellow-300 text-sm">⚠️</span>
-                  <span className="text-yellow-200 text-xs font-semibold">Importante</span>
                 </div>
                 <p className="text-yellow-100 text-xs">
                   Dependendo do projeto, poderá ocorrer valor adicional para implantação.
                 </p>
               </div>
-              
-              <a 
-                href="https://wa.me/5531992963254?text=Olá! Gostaria de saber mais sobre o plano de Agente de Texto & Automação (R$ 599/mês)." 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-full bg-[#6ea8fe] hover:bg-[#3b82f6] text-white py-3 rounded-lg font-semibold transition-colors block text-center"
-              >
-                Iniciar Agora
-              </a>
             </div>
           </div>
+        </div>
+
+        {/* Botão centralizado abaixo dos cards */}
+        <div className="text-center">
+          <a 
+            href="https://wa.me/5531992963254?text=Olá! Gostaria de saber mais sobre os planos da Automação360." 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center bg-gradient-to-r from-[#198754] to-[#157347] hover:from-[#157347] hover:to-[#0f5132] text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+          >
+            <span className="mr-2">🚀</span>
+            Iniciar Agora
+          </a>
         </div>
       </div>
     </section>
